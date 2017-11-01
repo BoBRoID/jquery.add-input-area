@@ -45,7 +45,7 @@ $.addInputArea = function(elem, option) {
   this._setDelBtnVisibility();
 
   var self = this;
-  $(document).on('click', this.option.btn_add, function() {
+  $(this.option.btn_add).on('click', function() {
     self._ehAddBtn.call(self);
   });
   $(self.elem).on('click', self.option.btn_del, function(ev) {
